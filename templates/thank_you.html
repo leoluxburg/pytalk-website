@@ -1,0 +1,24 @@
+{% extends "ebook.html" %}
+
+{% block content %}
+  <div class="container">
+    <div style="text-align: center; padding-top:100px; padding-bottom:100px;">
+          <img src="https://i.ibb.co/Nxj5YnS/1691620829.png" alt="1691620829" border="0" height='300px'>
+
+  <h1 style="font-family: 'Raleway', sans-serif; font-weight: lighter;">¡Gracias por comprar mi ebook!</h1>
+  <h2 style="font-family: 'Raleway', sans-serif; font-weight: lighter;">Haz clic en el boton y descarga tu <strong>BMO EBOOK</strong></h2>
+  <a id="download_button" href='/download_pdf'> <button class="btn btn-leo " type="submit"><i class="fas fa-download"></i> Descargar</button></a>
+   </div>
+</div>
+
+<script>
+document.getElementById('download_button').addEventListener('click', function() {
+
+
+
+    setTimeout(function() {
+        window.location.href = '/';
+    }, 1000);
+});
+</script>
+{% endblock %}
